@@ -33,5 +33,5 @@ Machine learning models to predict real estate prices with regression techniques
 
 ## 📫 Contact
 
-Let's connect: [LinkedIn]((https://www.linkedin.com/in/cindymao109/))  
+Let's connect: [LinkedIn](https://www.linkedin.com/in/cindymao109/)  
 Feel free to check out my work and reach out!
