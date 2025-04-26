@@ -112,11 +112,15 @@ footer {
   margin-bottom: 50px;
 }
 
-.about-text {
-  font-family: 'Lora', serif;
-  text-align: left;
-  line-height: 1.8;
+.about-post {
+  font-family: 'Lora', serif; 
   font-size: 18px;
+  line-height: 1.8;
+  color: #333; 
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto; 
 }
+
 
 
