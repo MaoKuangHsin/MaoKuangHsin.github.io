@@ -78,7 +78,7 @@ footer {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .blog-container {
-  padding: 50px;
+  padding: 100px 50px 50px 50px;
   max-width: 1000px;
   margin: 50px auto;
 }
