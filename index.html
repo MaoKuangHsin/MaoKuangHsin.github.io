@@ -3,107 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cindy's Dynamic Website</title>
+  <title>Cindy Mao</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to bottom right, #d9e4f5, #f5d9e4);
-      text-align: center;
-    }
-    header {
-      background-color: #4a90e2;
-      color: white;
-      padding: 30px 0;
-      font-size: 2.5em;
-      font-weight: bold;
-    }
-    main {
-      margin-top: 50px;
-    }
-    h1 {
-      font-size: 2em;
-      color: #333;
-    }
-    #dynamicText {
-      font-size: 1.5em;
-      margin-top: 20px;
-      color: #666;
-      min-height: 50px;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #4a90e2;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 1em;
-      transition: background-color 0.3s;
-    }
-    a.button:hover {
-      background-color: #357ABD;
-    }
-    footer {
-      margin-top: 80px;
-      padding: 20px 0;
-      font-size: 0.8em;
-      color: #777;
-      background-color: #f0f0f0;
-    }
+    /* 這裡是通用CSS，其他頁也會用到 */
+    body { margin: 0; font-family: 'Open Sans', sans-serif; background-color: #ffffff; }
+    nav { background-color: #3a3d41; display: flex; padding: 15px; }
+    nav a { color: white; text-decoration: none; margin-right: 20px; font-weight: bold; font-size: 1em; }
+    nav a:hover { text-decoration: underline; }
+    .centered { text-align: center; margin-top: 100px; }
+    .name { font-family: 'Great Vibes', cursive; font-size: 60px; color: #333; }
+    .subtitle { margin-top: 10px; letter-spacing: 5px; font-size: 14px; color: #777; }
   </style>
 </head>
 
 <body>
 
-<header>
-  Welcome to Cindy's Website
-</header>
+<nav>
+  <a href="index.html">HOME</a>
+  <a href="about.html">About Me</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-<main>
-  <h1>Hello, I'm Cindy!</h1>
-  <div id="dynamicText"></div>
-
-  <a class="button" href="https://github.com/MaoKuangHsin" target="_blank">
-    Cindy's GitHub
-  </a>
-  <br>
-  <a class="button" href="https://www.linkedin.com/in/cindymao109/" target="_blank">
-    Cindy's LinkedIn
-  </a>
-
-</main>
-
-<footer>
-  © 2025 Cindy Mao. All rights reserved.
-</footer>
-
-<script>
-  const text = ["Data Scientist", "Sustainability Enthusiast", "Technology Explorer"];
-  let count = 0;
-  let index = 0;
-  let currentText = '';
-  let letter = '';
-
-  (function type() {
-    if (count === text.length) {
-      count = 0;
-    }
-    currentText = text[count];
-    letter = currentText.slice(0, ++index);
-
-    document.getElementById('dynamicText').textContent = letter;
-    if (letter.length === currentText.length) {
-      count++;
-      index = 0;
-      setTimeout(type, 1500);  
-    } else {
-      setTimeout(type, 150);
-    }
-  }());
-</script>
+<div class="centered">
+  <div class="name">Cindy Mao</div>
+  <div class="subtitle">DATA SCIENCE & SUSTAINABILITY</div>
+</div>
 
 </body>
 </html>
+
 
