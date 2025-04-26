@@ -113,14 +113,15 @@ footer {
 }
 
 .about-post {
-  font-family: 'Lora', serif; 
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   line-height: 1.8;
-  color: #333; 
+  color: #333;
   text-align: left;
   max-width: 700px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
+
 
 
 
