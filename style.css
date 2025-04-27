@@ -156,6 +156,12 @@ footer {
   font-weight: normal;
 }
 
+.menu-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
 
 
 .menu-toggle {
