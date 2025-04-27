@@ -158,16 +158,45 @@ footer {
 
 
 
-# for smartphone user
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
+
 @media (max-width: 768px) {
   nav {
-    flex-direction: column; 
-    align-items: center;   
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .menu-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
   nav a {
-    margin: 10px 0; 
-    font-size: 1.2em; 
+    margin: 10px 0;
+    font-size: 1.2em;
   }
 }
 
