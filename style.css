@@ -96,26 +96,19 @@ footer {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
-  
-
 }
 
-.blog-post:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
 .blog-post h2 {
   margin-bottom: 15px;
   color: #333333;
   font-weight: bold;
-  text-align: left; 
 }
 
-.blog-post p, .blog-post .date {
+.blog-post p {
   color: #555555;
   font-size: 18px;
   line-height: 1.6;
-  text-align: left;
+  text-align: justify;
 }
 
 .blog-title {
@@ -186,22 +179,9 @@ footer {
 
 
 @media (max-width: 768px) {
-  .blog-post {
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
-  }
-  .blog-post h2 {
-    font-size: 1.4em;
-  }
-  .blog-post p, .blog-post .blog-date {
-    font-size: 1em;
-  }
-
   nav {
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
   }
 
   .menu-links {
@@ -222,28 +202,8 @@ footer {
 
   nav a {
     margin: 10px 0;
-    font-size: 1.4em; 
-    padding: 10px 20px;
-    text-align: center;
-  }
-
-  .content, .centered {
-    padding: 20px;
-    max-width: 90%;
-    margin: auto;
-  }
-
-  h1, h2, h3 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1em;
-    line-height: 1.6;
+    font-size: 1.2em;
   }
 }
-
-
-
 
 
