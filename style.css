@@ -149,6 +149,11 @@ footer {
   text-decoration: underline;
 }
 
+.blog-date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
 
 
 
