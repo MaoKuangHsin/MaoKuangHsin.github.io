@@ -6,7 +6,7 @@ The site showcases my projects, skills, blog posts, and ways to get in touch wit
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Tools
 
 - **HTML**
 - **CSS**
