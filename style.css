@@ -96,7 +96,7 @@ footer {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 
 }
 
@@ -104,18 +104,18 @@ footer {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
 .blog-post h2 {
   margin-bottom: 15px;
   color: #333333;
   font-weight: bold;
+  text-align: left; 
 }
 
-.blog-post p {
+.blog-post p, .blog-post .date {
   color: #555555;
   font-size: 18px;
   line-height: 1.6;
-  text-align: justify;
+  text-align: left;
 }
 
 .blog-title {
