@@ -170,7 +170,8 @@ footer {
   background: white;
   margin: 4px 0;
 }
-# for smartphone user
+
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -198,6 +199,7 @@ footer {
     font-size: 1.2em;
   }
 }
+
 
 
 
