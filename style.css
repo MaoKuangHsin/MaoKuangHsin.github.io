@@ -158,4 +158,19 @@ footer {
 
 
 
+# for smartphone user
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; 
+    align-items: center;   
+  }
+  
+  nav a {
+    margin: 10px 0; 
+    font-size: 1.2em; 
+  }
+}
+
+
+
 
