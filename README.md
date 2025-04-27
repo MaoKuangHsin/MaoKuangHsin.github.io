@@ -21,6 +21,7 @@ The site showcases my projects, skills, blog posts, and ways to get in touch wit
 |:---|:---|
 | `/images/` | Store images used on the website |
 | `/style.css` | Main stylesheet |
+| `/js/menu-toggle.js` | JavaScript for menu toggle |
 | `index.html` | Home page |
 | `about.html` | About Cindy page |
 | `projects.html` | Projects showcase page |
