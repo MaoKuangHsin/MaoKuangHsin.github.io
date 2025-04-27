@@ -26,6 +26,12 @@ nav a {
   transition: all 0.3s ease;
 }
 
+.menu-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
 nav a:hover {
   text-decoration: underline;
   transform: scale(1.1);
@@ -154,12 +160,6 @@ footer {
   color: #888;
   margin: 8px 0;
   font-weight: normal;
-}
-
-.menu-links {
-  display: flex;
-  gap: 30px;
-  align-items: center;
 }
 
 
