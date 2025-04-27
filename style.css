@@ -179,9 +179,11 @@ footer {
 
 
 @media (max-width: 768px) {
+
   nav {
     flex-direction: column;
     align-items: center;
+    padding: 10px 0;
   }
 
   .menu-links {
@@ -202,7 +204,24 @@ footer {
 
   nav a {
     margin: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.4em; 
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .content, .centered {
+    padding: 20px;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.6;
   }
 }
 
