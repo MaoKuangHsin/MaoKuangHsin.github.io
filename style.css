@@ -20,7 +20,7 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-   margin: 0 30px; 
+  margin: 0 30px;
   font-weight: bold;
   font-size: 1em;
   transition: all 0.3s ease;
@@ -158,47 +158,17 @@ footer {
 
 
 
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.menu-toggle div {
-  width: 25px;
-  height: 3px;
-  background: white;
-  margin: 4px 0;
-}
-
-
+# for smartphone user
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
+    align-items: center;   
   }
-
-  .menu-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    align-items: center;
-  }
-
-  .menu-links.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
+  
   nav a {
-    margin: 10px 0;
-    font-size: 1.2em;
+    margin: 10px 0; 
+    font-size: 1.2em; 
   }
 }
-
 
 
