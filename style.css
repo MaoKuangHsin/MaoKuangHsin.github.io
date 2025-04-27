@@ -24,15 +24,18 @@ nav {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column; /* 把容器變上下方向 */
+  align-items: center;     /* 水平置中 */
+  justify-content: center; /* 垂直置中 */
   padding: 0 20px;
 }
 
 .menu-links {
   display: flex;
   gap: 30px;
+  justify-content: center; /* 把選單本身也置中 */
 }
+
 
 .menu-links a {
   color: #fff;
