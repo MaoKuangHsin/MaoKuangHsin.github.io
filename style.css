@@ -150,10 +150,12 @@ footer {
 }
 
 .blog-date {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 10px;
+  font-size: 13px;
+  color: #888;
+  margin: 8px 0;
+  font-weight: normal;
 }
+
 
 
 
