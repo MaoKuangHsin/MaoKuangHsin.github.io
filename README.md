@@ -39,4 +39,4 @@ The site showcases my projects, skills, blog posts, and ways to get in touch wit
 
 ---
 
-Thank you for visiting! 😊
+Thank you for visiting!
