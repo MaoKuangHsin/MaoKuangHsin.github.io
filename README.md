@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal website: [Cindy's Website](https://maokuanghsin.github.io/)
 
-The site showcases my projects, skills, blog posts, and ways to get in touch with me. It is built with basic web development technologies and is continuously updated as I grow.
+The site showcases my projects, skills, blog posts, and ways to get in touch with me. It is built with basic web development technologies and is continuously updated.
 
 ---
 
