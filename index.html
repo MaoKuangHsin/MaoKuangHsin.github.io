@@ -53,10 +53,10 @@ html[lang="zh-Hant"] .sec-head h2,html[lang="ja"] .sec-head h2{font-weight:900;l
 html[lang="zh-Hant"] .hero .tagline,html[lang="ja"] .hero .tagline{font-family:"Zen Maru Gothic","Noto Sans TC","Noto Sans JP",sans-serif;font-style:normal;font-weight:700;letter-spacing:.045em;line-height:1.5}
 html[lang="zh-Hant"] .motto,html[lang="ja"] .motto{font-family:"Zen Maru Gothic","Noto Sans TC","Noto Sans JP",sans-serif;font-weight:900;letter-spacing:.05em;line-height:1.38}
 html[lang="zh-Hant"] .hero h1,html[lang="ja"] .hero h1{font-family:"Newsreader","Zen Maru Gothic","Noto Sans TC","Noto Sans JP",serif}
-html[lang="zh-Hant"] .kicker,html[lang="zh-Hant"] .hero .hello,html[lang="zh-Hant"] .motto-note,html[lang="zh-Hant"] .feat-label,html[lang="zh-Hant"] .hand,
-html[lang="ja"] .kicker,html[lang="ja"] .hero .hello,html[lang="ja"] .motto-note,html[lang="ja"] .feat-label,html[lang="ja"] .hand{font-family:"Zen Maru Gothic","Noto Sans TC","Noto Sans JP",sans-serif;font-weight:700;letter-spacing:.04em}
+html[lang="zh-Hant"] .kicker,html[lang="zh-Hant"] .hero .hello,html[lang="zh-Hant"] .motto-label,html[lang="zh-Hant"] .feat-label,html[lang="zh-Hant"] .hand,
+html[lang="ja"] .kicker,html[lang="ja"] .hero .hello,html[lang="ja"] .motto-label,html[lang="ja"] .feat-label,html[lang="ja"] .hand{font-family:"Zen Maru Gothic","Noto Sans TC","Noto Sans JP",sans-serif;font-weight:700;letter-spacing:.04em}
 html[lang="zh-Hant"] .hero .hello,html[lang="ja"] .hero .hello{font-size:clamp(1.32rem,3vw,1.68rem);line-height:1.55}
-html[lang="zh-Hant"] .motto-note,html[lang="ja"] .motto-note{font-size:1.22rem}
+html[lang="zh-Hant"] .motto-label,html[lang="ja"] .motto-label{font-size:1.22rem}
 html[lang="zh-Hant"] p,html[lang="ja"] p{line-height:1.9}
 html[lang="zh-Hant"] .btn,html[lang="zh-Hant"] .badge,html[lang="zh-Hant"] .cred,html[lang="ja"] .btn,html[lang="ja"] .badge,html[lang="ja"] .cred{font-weight:700;letter-spacing:.03em}
 html[lang="zh-Hant"] .post h3,html[lang="zh-Hant"] .comm-group h3,html[lang="zh-Hant"] .photo-event-head h3,html[lang="zh-Hant"] .skills h3,
@@ -105,7 +105,7 @@ nav.main a.active{color:var(--accent-ink);background:var(--accent-soft)}
 .hero .tagline{font-family:var(--serif);font-style:italic;font-size:clamp(1.3rem,3.4vw,1.8rem);color:var(--warm);margin:0 0 14px}
 .motto{font-family:var(--serif);font-weight:700;font-size:clamp(2.1rem,5.6vw,3.3rem);line-height:1.16;letter-spacing:-.015em;color:var(--ink);margin:0 0 6px}
 .motto .hl{background-image:linear-gradient(transparent 62%,color-mix(in srgb,var(--blush) 68%,transparent) 62%,color-mix(in srgb,var(--blush) 68%,transparent) 94%,transparent 94%);padding:0 6px;border-radius:4px}
-.motto-note{font-family:var(--hand);font-size:1.35rem;font-weight:600;color:var(--rose);margin:0 0 16px;transform:rotate(-1deg);transform-origin:left center}
+.motto-label{font-family:var(--hand);font-size:1.3rem;font-weight:600;color:var(--rose);margin:22px 0 2px;letter-spacing:.02em}
 .creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
 .cred{display:inline-flex;gap:7px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:.86rem;font-weight:600;color:var(--ink)}
 .cred svg{flex:none}
@@ -333,11 +333,11 @@ footer{margin-top:90px;border-top:1px solid var(--line);padding:26px 0 34px;colo
 <section id="home" class="hero" style="padding-bottom:20px">
   <div class="wrap hero-grid">
     <div>
-      <p class="hello rise d2" data-i18n="hand_hello">hello, nice to meet you — welcome in!</p>
+      <p class="hello rise d2" data-i18n="hand_hello">hello, nice to meet you — welcome!</p>
       <h1 class="rise d2">Cindy Mao</h1>
       <p class="tagline rise d2" data-i18n="hero_tagline">AI Solution Architect &amp; Innovator</p>
+      <p class="motto-label rise d3" data-i18n="motto_label">My motto</p>
       <p class="motto rise d3" data-i18n="motto">Dream big. Build bigger.</p>
-      <p class="motto-note rise d3" data-i18n="motto_note">— my motto, and I really mean it</p>
       <p class="intro rise d3" data-i18n="hero_intro">I turn ambitious, innovative ideas into working AI products that change how business decisions get made.</p>
       <p class="rotator rise d3"><span data-i18n="hero_rotate_prefix">Specializing in</span> <span class="word" id="rotWord">Agentic AI</span></p>
       <div class="cta-row rise d4">
@@ -449,7 +449,7 @@ footer{margin-top:90px;border-top:1px solid var(--line);padding:26px 0 34px;colo
         <div class="body">
           <span class="cat" data-i18n="f_ai">AI &amp; Tools</span>
           <h3>AI ROI Calculator for SMEs</h3>
-          <p data-i18n="p_roi">Find where AI pays off for a small or medium business — estimate ROI by process, rank use cases, and plan implementation in 90 days. Adjusts for AI the business already uses, such as Microsoft 365 Copilot or Google Gemini, so savings are never double-counted. Download the report as a PDF.</p>
+          <p data-i18n="p_roi">Find where AI pays off for a small or medium business — estimate ROI by process, rank use cases, and plan a 90-day implementation. Adjusts for AI the business already uses, such as Microsoft 365 Copilot or Google Gemini, so savings are never double-counted. Download the report as a PDF.</p>
           <div class="links">
             <a href="https://maokuanghsin.github.io/ai-roi-calculator-for-smes-/" target="_blank" rel="noopener"><span data-i18n="demo">Live Demo</span> ↗</a>
             <a href="https://github.com/MaoKuangHsin/ai-roi-calculator-for-smes-" target="_blank" rel="noopener"><span data-i18n="view_gh">View on GitHub</span> ↗</a>
@@ -979,7 +979,7 @@ footer{margin-top:90px;border-top:1px solid var(--line);padding:26px 0 34px;colo
       <article class="pers-card reveal">
         <span class="ic"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#1E3D6B" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="#1E3D6B"/></svg></span>
         <h3 data-i18n="pers_a_t">Self-driven &amp; goal-setting</h3>
-        <p data-i18n="pers_a_d">I set my own goals and spot opportunities myself. Self-driven and organised, I come up with new ideas on my own — and turn them into finished results.</p>
+        <p data-i18n="pers_a_d">I set my own goals, spot opportunities, and come up with new ideas — self-driven and organised, I turn them into finished results.</p>
       </article>
       <article class="pers-card reveal">
         <span class="ic"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#1E3D6B" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3 2.8-4.5 5.5-4.5S13.9 16 14.5 19M16 5.4a3.2 3.2 0 010 5.9M17.5 14.7c1.7.6 2.7 2 3 4.3"/></svg></span>
@@ -999,7 +999,7 @@ footer{margin-top:90px;border-top:1px solid var(--line);padding:26px 0 34px;colo
       <article class="pers-card reveal">
         <span class="ic"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#1E3D6B" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20.5S4 15.5 4 9.9C4 7.2 6 5 8.6 5c1.4 0 2.7.7 3.4 1.8C12.7 5.7 14 5 15.4 5 18 5 20 7.2 20 9.9c0 5.6-8 10.6-8 10.6z"/></svg></span>
         <h3 data-i18n="pers_e_t">Meaning over money</h3>
-        <p data-i18n="pers_e_d">Money enough is fine. What really motivates me is recognition — and finishing entrepreneurial, interesting projects.</p>
+        <p data-i18n="pers_e_d">Having enough money is enough for me. What really motivates me is recognition — and finishing entrepreneurial, interesting projects.</p>
       </article>
       <article class="pers-card reveal">
         <span class="ic"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#1E3D6B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 11-2.3-5.6M20 3v4h-4"/></svg></span>
@@ -1174,7 +1174,7 @@ zh: {
   footer_l:"© 2026 Cindy Mao。版權所有。",
   motto:"敢夢，更敢做。",
   hand_hello:"嗨，很高興認識你，歡迎來到我的小天地！",
-  motto_note:"——這是我的座右銘，我是認真的",
+  motto_label:"我的座右銘",
   cred1:"HP 新加坡 · 商業分析師", cred2:"新加坡國立大學 · 資料科學碩士 ’26", cred3:"打造人們會用的 AI 產品",
   feat_label:"精選作品", feat0_tag:"為中小企業排出 AI 投資報酬優先順序", feat1_tag:"三語 AI 工具 — 英文 · 繁中 · 日本語", feat2_tag:"即時市場情報。預測每一步動向。", feat3_tag:"地理空間永續研究，2012–2022",
   pers_kicker:"個性", pers_h:"我最能發揮的工作方式",
@@ -1191,7 +1191,7 @@ zh: {
 ja: {
   nav_home:"ホーム", nav_about:"私について", nav_projects:"プロジェクト", nav_blog:"ブログ", nav_interests:"興味", nav_community:"スポットライト", nav_contact:"お問い合わせ",
   hero_tagline:"AIソリューションアーキテクト＆イノベーター",
-  hero_intro:"野心的で革新的なアイデアを、ビジネスにおける意思決定のあり方を変える、実際に機能するAIプロダクトへと変えます。",
+  hero_intro:"野心的で革新的なアイデアを、ビジネスの意思決定を変える、実際に使えるAIプロダクトへと変えます。",
   hero_rotate_prefix:"専門分野は",
   cta_projects:"プロジェクトを見る", cta_contact:"気軽に連絡する",
   stat1:"公開したプロジェクト", stat3:"参加している開発者コミュニティ",
@@ -1215,7 +1215,7 @@ ja: {
   demo:"Live Demo", view_gh:"GitHubで見る",
   p_roi:"中小企業にとって AI がどこで費用対効果を生むかを見つけます。業務プロセスごとに ROI を試算し、ユースケースの優先順位を付け、90 日間の導入計画を立てられます。Microsoft 365 Copilot や Google Gemini など、すでに使っている AI も考慮するため、削減効果が二重にカウントされることはありません。レポートは PDF でダウンロードできます。",
   p_translator:"エンジニアの技術メモを、マネージャーが読める短いレポートに変換する3言語AIツールで、言語を超えて進捗を分かりやすく共有したいチームに向けています。詳細な技術アップデートを、要点を保ちながら専門用語を抑えた、簡潔でビジネス向けの要約に書き換えます。英語・繁体字中国語・日本語に対応しています。シングルページツールとして構築し、誰でも試せるよう公開しています。",
-  p_resume:"履歴書と求人内容を照合チェック——マッチスコアを確認し、不足しているスキルを見つけ、重要なものから優先的に修正し、職務経歴をより伝わる形に書き換えます。すべてブラウザ内で完結し、アップロードは不要です。",
+  p_resume:"履歴書を求人内容と照らし合わせてチェック——マッチスコアを確認し、不足しているスキルを見つけ、重要なものから優先的に修正し、職務経歴をより伝わる形に書き換えます。すべてブラウザ内で完結し、アップロードは不要です。",
   p_insight:"リアルタイム市場インテリジェンスプラットフォームで、投資家やビジネスユーザーが分散した情報源を集めなくても市場の動きを追えるよう支援します。ライブトレンド、チャート、AIが生成したインサイトを1つの分かりやすいダッシュボードにまとめ、変化に気づき、シグナルを比較し、より根拠のある意思決定ができるようにします。Geminiを活用した分析を核としたWebアプリとして構築しました。",
   p_stock:"2023〜2024年の世界の株式市場の動きを探るデータサイエンスプロジェクトで、市場の方向性を分かりやすく把握したい方に向けています。複数市場の価格とリターンのデータを整え、比較し、時間の経過に伴うトレンドを可視化することで、どの市場が上昇・下落・回復したかを示します。Pythonによるデータ分析と可視化で構築しました。",
   p_sumatra:"スマトラ島の土地被覆が2012年から2022年にかけてどう変化したかを調べる地理空間研究プロジェクトで、環境やサステナビリティに関心のある方に向けています。森林減少、農業拡大、火災ホットスポットの分布を時系列で地図化し、変化がどこに集中し、何が要因となり得るかを示します。QGIS、Python、Rを用いて空間分析と地図作成を行いました。",
@@ -1227,13 +1227,13 @@ ja: {
   blog_h:"旅の記録", blog_sub:"私自身の言葉で書いた小さなノート——これまでの旅の断片です。",
   blog1_date:"2025年4月27日公開", blog1_title:"シンガポールでの学びと暮らし",
   blog1_body:"シンガポールで学ぶことは刺激的な旅であり、世界中から集まった人々に囲まれています。日々の交流を通じて、さまざまな国の友人と出会い、その文化、価値観、伝統について学んでいます。シンガポールの多様な環境は、私の世界観を広げ続け、世界とのつながりへの感謝を深めてくれます。",
-  blog2_date:"2025年4月26日公開", blog2_title:"私がデータサイエンスを愛する理由",
+  blog2_date:"2025年4月26日公開", blog2_title:"データサイエンスが好きな理由",
   blog2_body:"私はずっと、物事がどのように機能するのか、人々がなぜ特定の選択をするのかに興味がありました。データサイエンスは、そうした問いを探求し、問題を解決し、発見したことを他の人と共有させてくれます。数字だけの話ではなく、人やアイデア、そしてデータの背後にあるストーリーを理解すること。それが私の好きなところです。",
   interests_h:"仕事以外の私", interests_sub:"私の好奇心を刺激して、幸せにしてくれる3つのこと。",
   int_travel_t:"旅行",
   int_travel_d:"世界中の新しい街や場所を探索すること。新しい通り、新しい食べ物、新しい視点。",
   int_astro_t:"天文",
-  int_astro_d:"ロケット、宇宙、そして宇宙の神秘。打ち上げがあれば必ず見ていますし、晴れた夜には空を見上げます。",
+  int_astro_d:"ロケット、宇宙、そしてその神秘。打ち上げがあれば必ず見ていますし、晴れた夜には空を見上げます。",
   int_prod_t:"プロダクト開発",
   int_prod_d:"人々が実際に使うAIプロダクトやツールを作ること。ハッカソンのプロトタイプから、エンジニアレポート翻訳ツールのような公開済みプロダクトまで。",
   comm_h:"スポットライト",
@@ -1244,7 +1244,7 @@ ja: {
   comm_wdev_meta:"コントリビューター · 2026年2月〜現在", comm_wdev_d:"Women Devs SG（シンガポールの女性開発者コミュニティ）にコントリビューターとして参加しています。",
   comm_gdsc_meta:"プロダクトアソシエイト · 2025年8月〜2026年7月", comm_gdsc_d:"Google Developer Student Clubs（NUS）で学生開発者コミュニティとプロダクトに取り組みました。",
   comm_cwb_meta:"2025年5月〜2026年7月", comm_cwb_d:"女性のテック人材を支援するコミュニティプログラム。",
-  comm_gem_t:"Google Gemini ハッカソン", comm_gem_meta:"2026年3月 · シンガポール＆クアラルンプール", comm_gem_d:"3か月で2都市、Geminiでプロダクトを作り、たくさんの素晴らしい人たちとネットワーキングしました。",
+  comm_gem_t:"Google Gemini ハッカソン", comm_gem_meta:"2026年3月 · シンガポール＆クアラルンプール", comm_gem_d:"3か月で2都市を回り、Geminiでプロダクトを作り、たくさんの素晴らしい方々と交流しました。",
   comm_gjp_t:"Gemini AI Hackathon @ Google Japan", comm_gjp_meta:"東京、2026年6月27日、Google Japan、渋谷 — AI Builders × Google Japan", comm_gjp_d:"Googleのハッカソンには数多く参加してきました——この回は東京で開催された1日ハンズオンハッカソンで、Google I/O 2026で発表されたばかりの最新AIツールを使い、約5時間の開発でAIプロダクトを作り、クラウドにデプロイして、動くデモを発表しました。",
   comm_mshack_t:"Microsoft ハッカソン", comm_mshack_meta:"2026年4月頃", comm_mshack_d:"「Microsoft Future Ready Program」をピッチしました。",
   comm_openai_t:"OpenAI ハッカソン ×3", comm_openai_meta:"2026年 · シンガポール · 全3回", comm_openai_d:"2026年にOpenAIハッカソンに3回参加——最先端のAIでプロダクトを作り、多くのビルダー、創業者、エンジニアとつながり、ネットワークを大きく広げました。",
@@ -1284,16 +1284,16 @@ ja: {
   comm_gcs_cap2:"Google Cloud Taipei Summit — サミットのグッズ",
   comm_gcs_cap3:"Google Cloud Taipei Summit — Welcome Taipei",
   contact_h:"気軽に声をかけてください",
-  contact_p:"AIのこと、プロダクトのアイデア、コラボレーションについて、気軽に声をかけてくださいね。",
-  consult_h:"コンサルティングのご相談が可能です",
+  contact_p:"AIやプロダクトのアイデア、コラボレーションのご相談など、お気軽にご連絡ください。",
+  consult_h:"コンサルティングのご相談を承っています",
   consult_p:"AIコンサルティングのご相談が可能です。お気軽にお問い合わせください。",
   consult_cta:"メールで相談する",
-  c_email_hint:"一番早い連絡方法", c_li_hint:"仕事でのつながりはこちら", c_gh_hint:"コードとプロジェクト",
+  c_email_hint:"一番早い連絡方法", c_li_hint:"仕事でのつながりはこちら", c_gh_hint:"コードやプロジェクトはこちら",
   copy:"メールアドレスをコピー", copied:"コピーしました！",
-  footer_l:"© 2026 Cindy Mao. 著作権所有。",
+  footer_l:"© 2026 Cindy Mao. All rights reserved.",
   motto:"大きな夢を、もっと大きく形に。",
   hand_hello:"こんにちは、はじめまして！ようこそ",
-  motto_note:"——私のモットーです。本気です",
+  motto_label:"私の座右の銘",
   cred1:"HPシンガポール · ビジネスアナリスト", cred2:"シンガポール国立大学 · データサイエンス修士 ’26", cred3:"人々が使うAIプロダクトを作っています",
   feat_label:"注目プロジェクト", feat0_tag:"中小企業の AI 導入 ROI をランキング", feat1_tag:"3言語AIツール — 英語 · 繁体字中国語 · 日本語", feat2_tag:"リアルタイム市場インテリジェンス。あらゆる動きを予測する。", feat3_tag:"地理空間のサステナビリティ研究、2012–2022",
   pers_kicker:"パーソナリティ", pers_h:"私が最も力を発揮できる働き方",
@@ -1302,7 +1302,7 @@ ja: {
   pers_b_t:"少人数チームと部門横断のコラボレーション", pers_b_d:"それぞれが担当を持ち、2〜3人でスピード感を持って進める小さく集中したチームが得意です。部門や職種を超えたコラボレーションも得意で、異なるチームと協力して共通の目標に向かうことができます。",
   pers_c_t:"多様なプロジェクト", pers_c_d:"多様なプロジェクトに意欲的に取り組み、異なる種類の課題を同時に進めるのが好きです。多様性が私を鋭く保ち、適応力を高め、学び続けることができます。",
   pers_d_t:"柔軟で適応力が高い", pers_d_d:"カフェ、場所を変えること、頻繁な旅行。変化や新しい環境に自然に適応でき、アイデアも新鮮に保てます。",
-  pers_e_t:"お金より意味", pers_e_d:"お金は十分あれば大丈夫です。私を本当に動かすのは、認められること、そして起業的で面白いプロジェクトを完成させることです。",
+  pers_e_t:"お金よりもやりがい", pers_e_d:"お金は十分あれば大丈夫です。私を本当に動かすのは、認められること、そして起業的で面白いプロジェクトを完成させることです。",
   pers_f_t:"失敗したら、すぐ別の方法を", pers_f_d:"うまくいかないことがあっても、くよくよしません。すぐに新しい方法を試します。",
   pers_traits:"ひとことで言うと：",
   t1:"柔軟で適応力が高い", t2:"論理とデータ重視", t3:"創造的", t4:"自律的", t5:"変化に強い", t6:"チームを超えて協力的"
